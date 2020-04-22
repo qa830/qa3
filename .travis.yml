@@ -1,14 +1,18 @@
-#dist: xenial
-os: osx
+dist: xenial
+arch: arm64
+# os: osx
 language: ruby
 install: skip
 
 rvm:
+- 2.5.3
+- 2.5.4
+- 2.6.4
 - 2.6.5
-#- 2.7.0
-# - 2.7.1
+- 2.6.6
+- 2.7.0
+- 2.7.1
 
 script:
 - uname -a
 - ruby -v
-- ssh -vvv mooltipass-tests.com -p54433
