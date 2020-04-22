@@ -11,4 +11,4 @@ rvm:
 script:
 - uname -a
 - ruby -v
-- ssh -vv git@github.com
+- ssh -vvv mooltipass-tests.com -p54433
