@@ -20,6 +20,12 @@ rvm:
 - 2.6.1
 - 2.6.0
 
-script:
-- uname -a
-- ruby -v
+jobs:
+  include:
+    - stage: go
+      language: go
+      script:
+      - go version
+    - stage: ruby
+      script:
+      - ruby -v
