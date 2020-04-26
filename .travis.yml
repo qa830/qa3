@@ -30,7 +30,7 @@ jobs:
       language: go
       script:
       - go version
-    - stage: php
-      language: php
-      script:
-      - ruby -v
+#     - stage: php
+#       language: php
+#       script:
+#       - ruby -v
