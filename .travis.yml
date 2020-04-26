@@ -1,6 +1,6 @@
-dist: focal
-group: edge
-# dist: xenial
+# dist: focal
+# group: edge
+dist: xenial
 # group: dev
 
 arch:
