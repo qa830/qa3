@@ -22,10 +22,14 @@ rvm:
 
 jobs:
   include:
+    - stage: test
+      script:
+      - ruby -v
     - stage: go
       language: go
       script:
       - go version
-    - stage: ruby
+    - stage: php
+      language: php
       script:
       - ruby -v
