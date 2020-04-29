@@ -1,36 +1,52 @@
-# dist: focal
-# group: edge
-dist: xenial
-# group: dev
+# dist: xenial
+os: osx
+osx_image: xcode11.3
+language: ruby
+install: skip
 
-arch:
-# - arm64
-# - s390x
-- amd64
-# - ppc64le
-
-# rvm:
+rvm:
+- 2.6.5
+- 2.7.0
 # - 2.7.1
-# - 2.7.0
-# - 2.6.6
-# - 2.6.5
-# - 2.6.4
-# - 2.6.3
-# - 2.6.2
-# - 2.6.1
-# - 2.6.0
 
-jobs:
-  include:
-    - stage: test
-      install: skip
-      script:
-      - ruby -v
-    - stage: go
-      language: go
-      script:
-      - go version
-#     - stage: php
-#       language: php
+script:
+- uname -a
+- ruby -v
+
+
+# # dist: focal
+# # group: edge
+# dist: xenial
+# # group: dev
+
+# arch:
+# # - arm64
+# # - s390x
+# - amd64
+# # - ppc64le
+
+# # rvm:
+# # - 2.7.1
+# # - 2.7.0
+# # - 2.6.6
+# # - 2.6.5
+# # - 2.6.4
+# # - 2.6.3
+# # - 2.6.2
+# # - 2.6.1
+# # - 2.6.0
+
+# jobs:
+#   include:
+#     - stage: test
+#       install: skip
 #       script:
 #       - ruby -v
+#     - stage: go
+#       language: go
+#       script:
+#       - go version
+# #     - stage: php
+# #       language: php
+# #       script:
+# #       - ruby -v
