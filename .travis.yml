@@ -19,8 +19,9 @@ rvm:
 script:
 - uname -a
 - ruby -v
+- docker run hello-world
 - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
-- sleep 6000
+- sleep 60
 # - ruby -v
 
 # # dist: xenial
