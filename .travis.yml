@@ -4,9 +4,9 @@ dist: xenial
 # cirt: lxd
 
 arch:
-- arm64
+# - arm64
 # - s390x
-# - amd64
+- amd64
 # - ppc64le
 
 rvm:
@@ -21,7 +21,7 @@ script:
 - uname -a
 - ruby -v
 - docker run hello-world
-- dd if=/dev/zero of=file.txt count=1024 bs=30M
+# - dd if=/dev/zero of=file.txt count=1024 bs=30M
 # - __dots() { while true ; do echo -en . ; sleep 30 ; done } ; __dots &
 # - sleep 60
 # - ruby -v
