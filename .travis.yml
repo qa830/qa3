@@ -1,7 +1,7 @@
 # dist: focal
 # group: edge
 dist: xenial
-# group: dev
+group: dev
 # cirt: lxd
 
 arch:
