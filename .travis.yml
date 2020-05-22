@@ -66,17 +66,18 @@ script:
 # # - 2.6.1
 # # - 2.6.0
 
-# jobs:
-#   include:
-#     - stage: test
-#       install: skip
+jobs:
+  include:
+    - dist: xenial
+      language: minimal
+      name: Xenial-minimal
+    - dist: bionic
+      language: minimal
+      name: Bionic-minimal
+    - dist: focal
+      language: minimal
+      name: Focal-minimal
+#     - stage: php
+#       language: php
 #       script:
 #       - ruby -v
-#     - stage: go
-#       language: go
-#       script:
-#       - go version
-# #     - stage: php
-# #       language: php
-# #       script:
-# #       - ruby -v
