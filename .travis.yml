@@ -81,6 +81,9 @@ jobs:
     - dist: bionic
       language: generic
       name: Bionic-generic
+    - dist: bionic
+      language: ruby
+      name: Bionic-full
     - dist: focal
       language: minimal
       name: Focal-minimal
