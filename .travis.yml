@@ -87,6 +87,12 @@ jobs:
     - dist: focal
       language: minimal
       name: Focal-minimal
+    - dist: focal
+      language: generic
+      name: Focal-generic
+    - dist: focal
+      language: ruby
+      name: Focal-full
 #     - stage: php
 #       language: php
 #       script:
